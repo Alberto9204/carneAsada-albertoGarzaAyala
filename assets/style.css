@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 32px;
     color: black;
 }
@@ -10,6 +10,7 @@
 body{
     background: linear-gradient(to bottom, #D78019 0%, #D7D062 50%, #E42A04 100%);
 }
+
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,6 +30,7 @@ body{
     box-shadow:10px 10px 9px 8px rgba(0,0,0,0.75);
     margin: 5px;
     border: transparent;
+    border-radius: 10px;
 
   }
   
@@ -55,6 +57,7 @@ body{
     display: flex;
     align-content: center;
   }
+  
 
   .principal{
     grid-area: section;
@@ -147,6 +150,11 @@ body{
     box-shadow: 10px 10px 9px 8px rgba(0,0,0,0.75);
 }
 
+.tarjeta1:hover{
+  transform:scale(1.15);
+  transition: 1s;
+}
+
 .tarjeta2{
     width: 300px;
     height: 330px;
@@ -160,6 +168,11 @@ body{
     border-style: groove;   
     border-color: black;
     box-shadow: 10px 10px 9px 8px rgba(0,0,0,0.75);
+}
+
+.tarjeta2:hover{
+  transform:scale(1.15);
+  transition: 1s;
 }
 
 .tarjeta3{
@@ -177,6 +190,10 @@ body{
     box-shadow: 10px 10px 9px 8px rgba(0,0,0,0.75);
 }
 
+.tarjeta3:hover{
+  transform:scale(1.15);
+  transition: 1s;
+}
 .imRecetas{
   width: 80%;
   height: 80%;
@@ -261,16 +278,50 @@ body{
       margin: 15px;
   }
 
-  @media (min-width:500px){
-    nav img{
-        width: 150px;
-        height: 150px;
-        box-shadow:10px 10px 9px 8px rgba(0,0,0,0.75);
-        margin: 5px;
-        border: transparent;
+  .imgCarne{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .titulo1{
+      padding: 10px;
+      text-align: center;
+  }
+
+  .botonCarro{
+    margin: 10px;
+  }
+
+  .imgOpinion{
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  @media (max-width:700px){
+    .nav{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
       }
 
-    
+    nav ul li{
+      border-right: solid;
+      text-align: justify;
+    }  
+
+    .logo{
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media (max-width:340px){
+    nav ul li{
+      text-align: justify;
+      border: none;
+    }  
   }
