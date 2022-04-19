@@ -3,7 +3,7 @@
     margin: 0px;
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
-    font-size: 32px;
+    font-size: 25px;
     color: black;
 }
 
@@ -21,35 +21,43 @@ body{
                           "footer footer";
   }
   
-  nav img{
+  .logo{
     grid-area: nav;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     width: 150px;
     height: 150px;
     box-shadow:10px 10px 9px 8px rgba(0,0,0,0.75);
     margin: 5px;
     border: transparent;
     border-radius: 10px;
-
+   
   }
   
   nav{
     grid-area: nav;
     display: flex;
-    justify-content: space-between;
   }
 
-  nav ul{
+  header{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+  }
+ header nav ul{
     list-style: none;
     display: flex;
     margin: 5px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+
   }
 
-  nav ul li{
+ header nav ul li{
     padding: 15px;
-    display: block
+    display: flex;
+    align-items: center;
+    justify-content: right
   }
 
   .diapositivas{
