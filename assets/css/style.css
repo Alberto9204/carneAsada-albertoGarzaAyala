@@ -31,8 +31,11 @@ body{
     margin: 5px;
     border: transparent;
     border-radius: 10px;
-   
   }
+
+  .logo:hover{ /* Tranformacion nueva*/
+    transform: skew(-25deg, -1deg);
+   }
   
   nav{
     grid-area: nav;
@@ -57,8 +60,14 @@ body{
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: right
+    justify-content: right;
   }
+
+   header nav ul li:hover { /*otra transfromacion mas usando hover*/
+    text-decoration-color: rgba(255, 255, 255, 1);
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  }
+
 
   .diapositivas{
     grid-area: main;
@@ -147,7 +156,7 @@ body{
   .tarjeta1{
     width: 300px;
     height: 330px;
-    background: linear-gradient(to bottom, #A91514 0%, #DDE483 100%);
+    background: linear-gradient(to bottom, #A91514 0%, #DDE483 100%); /*estas ya estaban el el proyecto*/
     border-radius: 10px ;
     padding: 20px;
     margin: 10px;
@@ -156,9 +165,10 @@ body{
     border-style: groove;   
     border-color: black;
     box-shadow: 10px 10px 9px 8px rgba(0,0,0,0.75);
+    transform: scale(1.1) rotate(360deg); /*primer tranformacion*/
 }
 
-.tarjeta1:hover{
+.tarjeta1:hover{       /*estas ya estaban el el proyecto*/
   transform:scale(1.15);
   transition: 1s;
 }
@@ -166,7 +176,7 @@ body{
 .tarjeta2{
     width: 300px;
     height: 330px;
-    background: linear-gradient(to bottom, #A91514 0%, #DDE483 100%);
+    background: linear-gradient(to bottom, #A91514 0%, #DDE483 100%); /*estas ya estaban el el proyecto*/
     border-radius: 10px ;
     justify-content: space-around;
     align-items: center;
@@ -176,17 +186,19 @@ body{
     border-style: groove;   
     border-color: black;
     box-shadow: 10px 10px 9px 8px rgba(0,0,0,0.75);
-}
+    transform: scale(1.1) rotate(360deg); /*primer tranformacion*/
+  }
 
-.tarjeta2:hover{
-  transform:scale(1.15);
-  transition: 1s;
-}
+    .tarjeta2:hover{       /*estas ya estaban el el proyecto*/
+      transform:scale(1.15);
+      transition: 1s;
+    }
+
 
 .tarjeta3{
     width: 300px;
     height: 330px;
-    background: linear-gradient(to bottom, #A91514 0%, #DDE483 100%);
+    background: linear-gradient(to bottom, #A91514 0%, #DDE483 100%); /*estas ya estaban el el proyecto*/
     border-radius: 10px ;
     padding: 20px;
     justify-content: space-around;
@@ -196,9 +208,10 @@ body{
     border-style: groove;   
     border-color: black;
     box-shadow: 10px 10px 9px 8px rgba(0,0,0,0.75);
+    transform: scale(1.1) rotate(360deg); /*primer tranformacion*/
 }
 
-.tarjeta3:hover{
+.tarjeta3:hover{ /*estas ya estaban el el proyecto*/
   transform:scale(1.15);
   transition: 1s;
 }
@@ -208,7 +221,7 @@ body{
   margin: 10px;
   padding: 10px;
   display: flex;
-  background: linear-gradient(to bottom, #A91514 0%, #DDE483 100%);
+  background: linear-gradient(to bottom, #A91514 0%, #DDE483 100%); 
 }
 .imPromociones{
   width: 80%;
@@ -332,4 +345,21 @@ body{
       text-align: justify;
       border: none;
     }  
+  }
+
+.opiniones {  /*esto esta en la pagina de opiniones*/
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
